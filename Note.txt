@@ -1,0 +1,82 @@
+Tailwind CSS Course
+Current
+https://www.youtube.com/watch?v=3eXWiQDYfIs&list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O&index=13
+
+https://www.youtube.com/playlist?list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O
+
+https://www.youtube.com/watch?v=6LhRLZ5_IgI&list=PLjVLYmrlmjGfpwYhVAbiGAhFl6h8XWDV_
+
+
+https://www.youtube.com/watch?v=4zHNGNCIezY
+
+====================================================
+
+Tailwindcss Important Links
+
+https://tailwindcss.com/
+
+https://play.tailwindcss.com/
+
+https://tailblocks.cc/
+
+https://tailblocks.org/
+
+https://tailwindui.com/
+
+https://tailwindcomponents.com/
+
+https://tailwindcomponents.com/cheatsheet/
+
+* https://flowbite.com/
+
+https://flowbite.com/tools/tailwind-cheat-sheet/
+
+https://tailwindcomponents.com/gradient-generator/
+
+https://sketch.io/sketchpad/
+
+https://sketch.io/
+
+https://sketchpad.app/
+
+https://www.autodraw.com/
+
+====================================================
+> npm init -y
+> npm install -D tailwindcss
+> npx tailwindcss init
+
+File - tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+File - src/input.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+File - src/index.html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+===================================
+
